@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\InClass.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\InClass.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\InClassEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\InClass">
+      <UniqueIdentifier>{3726B8E0-1C3C-391A-AD6E-872FEFFCF481}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\InClass\InClass.Build.cs">
+      <Filter>Source\InClass</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\InClass\InClass.cpp">
+      <Filter>Source\InClass</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\InClass\InClass.h">
+      <Filter>Source\InClass</Filter>
+    </ClInclude>
+    <Filter Include="Source\InClass\Private">
+      <UniqueIdentifier>{AE6CB4E7-14B3-3E97-BBEC-A2D17821F935}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\InClass\Private\FPSGameMode.cpp">
+      <Filter>Source\InClass\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\InClass\Private\Player">
+      <UniqueIdentifier>{39242491-EF4E-37AD-9795-0FC9E4FEE6ED}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\InClass\Private\Player\FPSCharacter.cpp">
+      <Filter>Source\InClass\Private\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\InClass\Public">
+      <UniqueIdentifier>{38782AF2-5094-30CA-B7F7-989F605C5EE3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\InClass\Public\FPSGameMode.h">
+      <Filter>Source\InClass\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\InClass\Public\Player">
+      <UniqueIdentifier>{64D6804A-CBBB-3793-BF8B-AEF937EE005B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\InClass\Public\Player\FPSCharacter.h">
+      <Filter>Source\InClass\Public\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

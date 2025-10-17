@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "InClass",
+			"Path": "..\\Source\\InClass.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "InClassEditor",
+			"Path": "..\\Source\\InClassEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

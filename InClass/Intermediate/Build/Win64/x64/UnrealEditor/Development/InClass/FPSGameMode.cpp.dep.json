@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\source\\inclass\\private\\fpsgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\x64\\inclasseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inclass\\definitions.inclass.h",
+            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\source\\inclass\\public\\fpsgamemode.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\unrealeditor\\inc\\inclass\\uht\\fpsgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-InClass.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/InClassEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/UnrealEditor/Development/InClass/Module.InClass.gen.cpp.obj"
+"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/UnrealEditor/Development/InClass/InClass.cpp.obj"
+"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/UnrealEditor/Development/InClass/FPSGameMode.cpp.obj"
+"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/UnrealEditor/Development/InClass/PerModuleInline.gen.cpp.obj"
+"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/UnrealEditor/Development/InClass/Default.rc2.res"
+/OUT:"C:/Users/chinw/Documents/TFS/Term 5/VGP221Winter2026-InClass/InClass/Intermediate/Build/Win64/x64/UnrealEditor/Development/InClass/UnrealEditor-InClass.lib"
