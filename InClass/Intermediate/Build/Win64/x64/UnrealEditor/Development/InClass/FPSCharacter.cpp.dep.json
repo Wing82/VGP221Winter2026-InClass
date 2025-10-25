@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\source\\inclass\\private\\player\\fpscharacter.cpp",
+        "Source": "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221-graphic 2\\vgp221winter2026-inclass\\inclass\\source\\inclass\\private\\player\\fpscharacter.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\x64\\inclasseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "PCH": "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221-graphic 2\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\x64\\inclasseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inclass\\definitions.inclass.h",
-            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\source\\inclass\\public\\player\\fpscharacter.h",
+            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221-graphic 2\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inclass\\definitions.inclass.h",
+            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221-graphic 2\\vgp221winter2026-inclass\\inclass\\source\\inclass\\public\\player\\fpscharacter.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
@@ -16,7 +16,7 @@
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
-            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\unrealeditor\\inc\\inclass\\uht\\fpscharacter.generated.h"
+            "c:\\users\\chinw\\documents\\tfs\\term 5\\vgp221-graphic 2\\vgp221winter2026-inclass\\inclass\\intermediate\\build\\win64\\unrealeditor\\inc\\inclass\\uht\\fpscharacter.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

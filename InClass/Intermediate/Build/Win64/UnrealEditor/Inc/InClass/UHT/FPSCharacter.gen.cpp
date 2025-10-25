@@ -256,14 +256,14 @@ AFPSCharacter::~AFPSCharacter() {}
 // ********** End Class AFPSCharacter **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics
+struct Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 3249587407U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_1748387951(TEXT("/Script/InClass"),
-	Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_1748387951(TEXT("/Script/InClass"),
+	Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

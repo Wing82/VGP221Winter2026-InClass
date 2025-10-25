@@ -104,14 +104,14 @@ AFPSGameMode::~AFPSGameMode() {}
 // ********** End Class AFPSGameMode ***************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_Statics
+struct Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AFPSGameMode, AFPSGameMode::StaticClass, TEXT("AFPSGameMode"), &Z_Registration_Info_UClass_AFPSGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSGameMode), 2628314629U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_1263370360(TEXT("/Script/InClass"),
-	Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_1263370360(TEXT("/Script/InClass"),
+	Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_FPSGameMode_h__Script_InClass_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

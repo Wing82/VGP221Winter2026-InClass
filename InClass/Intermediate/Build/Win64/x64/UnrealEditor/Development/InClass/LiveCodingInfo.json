@@ -1,10 +1,5 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.InClass.gen.cpp.obj": [
-			"FPSCharacter.gen.cpp.obj",
-			"FPSGameMode.gen.cpp.obj",
-			"InClass.init.gen.cpp.obj"
-		]
 	}
 }
