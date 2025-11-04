@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Camera/CameraComponent.h"
+#include "Components/Capsulecomponent.h"
 #include "GameFramework/Character.h"
 #include "FPSCharacter.generated.h"
 
@@ -26,6 +28,12 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* FPSCameraComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	USkeletalMeshComponent* FPSMesh;
+
 	UFUNCTION()
 	void MoveForwardTest(float value);
 
@@ -37,4 +45,7 @@ public:
 
 	UFUNCTION()
 	void EndJump();
+
+	UFUNCTION()
+	void Fire();
 };

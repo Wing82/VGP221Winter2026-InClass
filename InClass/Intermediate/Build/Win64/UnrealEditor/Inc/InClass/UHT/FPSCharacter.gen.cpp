@@ -13,6 +13,8 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 INCLASS_API UClass* Z_Construct_UClass_AFPSCharacter();
 INCLASS_API UClass* Z_Construct_UClass_AFPSCharacter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_InClass();
@@ -46,6 +48,35 @@ DEFINE_FUNCTION(AFPSCharacter::execEndJump)
 	P_NATIVE_END;
 }
 // ********** End Class AFPSCharacter Function EndJump *********************************************
+
+// ********** Begin Class AFPSCharacter Function Fire **********************************************
+struct Z_Construct_UFunction_AFPSCharacter_Fire_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPSCharacter_Fire_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, nullptr, "Fire", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_Fire_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFPSCharacter_Fire_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AFPSCharacter_Fire()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AFPSCharacter_Fire_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AFPSCharacter::execFire)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->Fire();
+	P_NATIVE_END;
+}
+// ********** End Class AFPSCharacter Function Fire ************************************************
 
 // ********** Begin Class AFPSCharacter Function MoveForwardTest ***********************************
 struct Z_Construct_UFunction_AFPSCharacter_MoveForwardTest_Statics
@@ -166,6 +197,7 @@ void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	UClass* Class = AFPSCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "EndJump", &AFPSCharacter::execEndJump },
+		{ "Fire", &AFPSCharacter::execFire },
 		{ "MoveForwardTest", &AFPSCharacter::execMoveForwardTest },
 		{ "MoveRightTest", &AFPSCharacter::execMoveRightTest },
 		{ "StartJump", &AFPSCharacter::execStartJump },
@@ -209,10 +241,24 @@ struct Z_Construct_UClass_AFPSCharacter_Statics
 		{ "IncludePath", "Player/FPSCharacter.h" },
 		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FPSCameraComponent_MetaData[] = {
+		{ "Category", "FPSCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FPSMesh_MetaData[] = {
+		{ "Category", "FPSCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/FPSCharacter.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_FPSCameraComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_FPSMesh;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFPSCharacter_EndJump, "EndJump" }, // 2189433000
+		{ &Z_Construct_UFunction_AFPSCharacter_Fire, "Fire" }, // 1171297253
 		{ &Z_Construct_UFunction_AFPSCharacter_MoveForwardTest, "MoveForwardTest" }, // 28215217
 		{ &Z_Construct_UFunction_AFPSCharacter_MoveRightTest, "MoveRightTest" }, // 1887396389
 		{ &Z_Construct_UFunction_AFPSCharacter_StartJump, "StartJump" }, // 3893168374
@@ -223,6 +269,13 @@ struct Z_Construct_UClass_AFPSCharacter_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_FPSCameraComponent = { "FPSCameraComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, FPSCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FPSCameraComponent_MetaData), NewProp_FPSCameraComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_FPSMesh = { "FPSMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPSCharacter, FPSMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FPSMesh_MetaData), NewProp_FPSMesh_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPSCharacter_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_FPSCameraComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_FPSMesh,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AFPSCharacter_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_ACharacter,
 	(UObject* (*)())Z_Construct_UPackage__Script_InClass,
@@ -234,11 +287,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AFPSCharacter_Statics::
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	FuncInfo,
-	nullptr,
+	Z_Construct_UClass_AFPSCharacter_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::PropPointers),
 	0,
 	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_AFPSCharacter_Statics::Class_MetaDataParams)
@@ -259,10 +312,10 @@ AFPSCharacter::~AFPSCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 3249587407U) },
+		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 713741916U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_1748387951(TEXT("/Script/InClass"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_1479938345(TEXT("/Script/InClass"),
 	Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_chinw_Documents_TFS_Term_5_VGP221_Graphic_2_VGP221Winter2026_InClass_InClass_Source_InClass_Public_Player_FPSCharacter_h__Script_InClass_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

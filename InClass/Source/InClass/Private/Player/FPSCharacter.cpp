@@ -9,6 +9,27 @@ AFPSCharacter::AFPSCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// This is a crash test comment to avoid crashes
+	//int* CrashInt = nullptr;
+	//UE_LOG(LogTemp, Warning, TEXT("%i"), *CrashInt);
+
+	UE_LOG(LogTemp, Warning, TEXT("This is the player contructor being called"));
+
+	if (!FPSCameraComponent) {
+		FPSCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera")); // AddComponent in Unity
+		FPSCameraComponent->SetupAttachment(CastChecked<USceneComponent, UCapsuleComponent>(GetCapsuleComponent()));
+		FPSCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f + BaseEyeHeight));
+		FPSCameraComponent->bUsePawnControlRotation = true;
+	}
+
+	if (!FPSMesh) {
+		FPSMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("FirstPersonMesh"));
+		FPSMesh->SetupAttachment(FPSCameraComponent);
+		FPSMesh->bCastDynamicShadow = false;
+		FPSMesh->CastShadow = false;
+	}
+
+	GetMesh()->SetOwnerNoSee(true);
 }
 
 // Called when the game starts or when spawned
@@ -32,10 +53,18 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 	// Movement
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForwardTest);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRightTest);
+
+	// Look Around
+	PlayerInputComponent->BindAxis("LookHorizontal", this, &AFPSCharacter::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("LookVertical", this, &AFPSCharacter::AddControllerPitchInput);
+
+	// Fire
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::Fire);
 
 	// Jump
 	//Calling a function directly
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 
 	//Calling our own function
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AFPSCharacter::StartJump);
@@ -53,6 +82,8 @@ void AFPSCharacter::MoveForwardTest(float value)
 
 void AFPSCharacter::MoveRightTest(float value)
 {
+	FVector Direction = GetActorRightVector();
+	AddMovementInput(Direction, value);
 }
 
 void AFPSCharacter::StartJump()
@@ -63,5 +94,10 @@ void AFPSCharacter::StartJump()
 void AFPSCharacter::EndJump()
 {
 	bPressedJump = false;
+}
+
+void AFPSCharacter::Fire()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Fire!!!"));
 }
 

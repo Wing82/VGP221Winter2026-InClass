@@ -4,6 +4,7 @@
 		"Module.InClass.gen.cpp.obj": [
 			"FPSCharacter.gen.cpp.obj",
 			"FPSGameMode.gen.cpp.obj",
+			"GameHUD.gen.cpp.obj",
 			"InClass.init.gen.cpp.obj"
 		]
 	}
