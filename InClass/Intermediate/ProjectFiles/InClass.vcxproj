@@ -67,7 +67,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{91FA8E44-B563-3A89-A049-4CFD257EBF10}</ProjectGuid>
+    <ProjectGuid>{89C7AAF5-956C-31CE-9101-3E28D25E0B33}</ProjectGuid>
     <RootNamespace>InClass</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />
@@ -265,10 +265,14 @@
     <ClCompile Include="..\..\Source\InClass\Private\FPSGameMode.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\InClass\Private\HUB\GameHUD.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\InClass\Private\Player\FPSCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\InClass\Public\FPSGameMode.h"/>
+    <ClInclude Include="..\..\Source\InClass\Public\HUB\GameHUD.h"/>
     <ClInclude Include="..\..\Source\InClass\Public\Player\FPSCharacter.h"/>
   </ItemGroup>
   <PropertyGroup>

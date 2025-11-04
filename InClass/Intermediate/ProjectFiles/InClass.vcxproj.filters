@@ -45,6 +45,12 @@
     <ClCompile Include="..\..\Source\InClass\Private\FPSGameMode.cpp">
       <Filter>Source\InClass\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\InClass\Private\HUB">
+      <UniqueIdentifier>{6A66FDED-76C0-3A51-94C9-93614F60F36A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\InClass\Private\HUB\GameHUD.cpp">
+      <Filter>Source\InClass\Private\HUB</Filter>
+    </ClCompile>
     <Filter Include="Source\InClass\Private\Player">
       <UniqueIdentifier>{39242491-EF4E-37AD-9795-0FC9E4FEE6ED}</UniqueIdentifier>
     </Filter>
@@ -56,6 +62,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\InClass\Public\FPSGameMode.h">
       <Filter>Source\InClass\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\InClass\Public\HUB">
+      <UniqueIdentifier>{01D5EECA-5059-3B09-AEDE-5A399AA422C0}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\InClass\Public\HUB\GameHUD.h">
+      <Filter>Source\InClass\Public\HUB</Filter>
     </ClInclude>
     <Filter Include="Source\InClass\Public\Player">
       <UniqueIdentifier>{64D6804A-CBBB-3793-BF8B-AEF937EE005B}</UniqueIdentifier>
